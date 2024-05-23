@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribute to Mrunal Thakur</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, #e30022, #ff6f61);
+            padding: 20px;
+            color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .img-container {
+            flex: 0 0 200px;
+            margin-right: 20px;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+            animation: slideInLeft 1s ease-in-out;
+        }
+
+        .img-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+        }
+
+        .info-container {
+            max-width: 600px;
+            animation: slideInRight 1s ease-in-out;
+        }
+
+        .info-container h1 {
+            font-size: 36px;
+            margin: 10px 0;
+        }
+
+        .info-container h3 {
+            font-size: 24px;
+            margin: 5px 0;
+        }
+
+        .info-container p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .timeline,
+        .movies-list,
+        .famous-role,
+        .achievements {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        .timeline h2,
+        .movies-list h2,
+        .famous-role h2,
+        .achievements h2 {
+            font-size: 24px;
+            margin: 0 0 20px;
+            color: #e30022;
+        }
+
+        .timeline ul,
+        .movies-list ul {
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+        }
+
+        .timeline li,
+        .movies-list li {
+            padding: 10px 0;
+            position: relative;
+            color: #333;
+            font-size: 18px;
+            line-height: 1.6;
+            margin-left: 20px;
+        }
+
+        .timeline li:before,
+        .movies-list li:before {
+            content: "•";
+            position: absolute;
+            left: -20px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 20px;
+            color: #e30022;
+        }
+
+        .movies-list li:before {
+            content: "▶";
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #e30022;
+            color: #fff;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .btn {
+            background-color: #e30022;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #c7001e;
+        }
+
+        .achievements {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .achievements h2 {
+            font-size: 24px;
+            margin: 0 0 20px;
+            color: #e30022;
+        }
+
+        .achievements p {
+            font-size: 18px;
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInLeft {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInRight {
+            from {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="img-container">
+            <img src="https://1847884116.rsc.cdn77.org/tamil/home/mrunal150922_2.jpg" alt="Mrunal Thakur">
+        </div>
+        <div class="info-container">
+            <h1>Mrunal Thakur</h1>
+            <h3>The Rising Star of Bollywood</h3>
+            <p>Mrunal Thakur, the talented actress known for her captivating performances in Indian cinema.</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="timeline" id="life-info">
+            <h2>Timeline of Mrunal Thakur's Life</h2>
+            <ul>
+                <li><strong>1992</strong>: Born on August 1st in Dhule, Maharashtra, India.</li>
+                <li><strong>2012</strong>: Begins her acting career with the TV series "Mujhse Kuchh Kehti...Yeh Khamoshiyaan".</li>
+                <li><strong>2014</strong>: Gains popularity with her role in the TV show "Kumkum Bhagya".</li>
+                <li><strong>2018</strong>: Makes her Bollywood debut in the film "Love Sonia".</li>
+                <li><strong>2019</strong>: Stars in the hit film "Super 30" alongside Hrithik Roshan.</li>
+                <li><strong>2021</strong>: Delivers a stellar performance in "Toofaan" with Farhan Akhtar.</li>
+                <li><strong>2022</strong>: Appears in the critically acclaimed film "Jersey".</li>
+                <li><strong>2023</strong>: Wins accolades for her role in "Sita Ramam".</li>
+                <li><strong>2024</strong>: Announces new projects with top directors and actors in the industry.</li>
+            </ul>
+        </section>
+        
+        <section class="movies-list">
+            <h2>Mrunal Thakur's Movies</h2>
+            <ul>
+                <li><strong>Love Sonia (2018)</strong></li>
+                <li><strong>Super 30 (2019)</strong></li>
+                <li><strong>Batla House (2019)</strong></li>
+                <li><strong>Ghost Stories (2020)</strong></li>
+                <li><strong>Toofaan (2021)</strong></li>
+                <li><strong>Dhamaka (2021)</strong></li>
+                <li><strong>Jersey (2022)</strong></li>
+                <li><strong>Sita Ramam (2022)</strong></li>
+            </ul>
+        </section>
+        
+        <section class="famous-role">
+            <h2>Notable Performances</h2>
+            <p>Mrunal Thakur is celebrated for her powerful performances in films like "Love Sonia", "Super 30", "Toofaan", and "Jersey". Her versatility and dedication to her roles have made her a prominent figure in the film industry.</p>
+        </section>
+        
+        <section class="achievements">
+            <h2>Achievements</h2>
+            <p>Mrunal Thakur has won several awards for her performances, including the prestigious Filmfare Award for Best Actress. Her role in "Sita Ramam" earned her critical acclaim and solidified her position as one of the most talented actresses in Bollywood.</p>
+            <p>She has also been featured in various international film festivals and has been recognized for her contributions to Indian cinema.</p>
+        </section>
+    </main>
+    <footer class="footer">
+        <p><a href="https://en.wikipedia.org/wiki/Mrunal_Thakur" target="_blank" class="wiki-link">Know more about Mrunal Thakur.</a></p>
+    </footer>
+</body>
+
+</html>
